@@ -22,3 +22,6 @@
 
 #### Database:
 <img alt="MongoDB" src ="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"/>
+
+#### Payment Gateway:
+<img alt="MongoDB" src ="https://img.shields.io/badge/Stripe-style=for-the-badge&message=Stripe&color=008CDD&logo=Stripe&logoColor=FFFFFF"/>
