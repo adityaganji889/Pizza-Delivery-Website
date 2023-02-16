@@ -21,4 +21,4 @@
 <img alt="NodeJS" src="https://img.shields.io/badge/node.js-%2343853D.svg?style=for-the-badge&logo=node-dot-js&logoColor=white"/> <img alt="ExpressJS" src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"/> <img alt="Mongoose" src ="https://img.shields.io/badge/Mongoose-orange?style=for-the-badge&logo=mongoose&logoColor=white"/> <img alt="JWT" src ="https://img.shields.io/badge/JWT-orange?style=for-the-badge&logo=jwt&logoColor=black"/>
 
 #### Database:
-<img alt="MongoDB" src ="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"/>
+<img alt="MongoDB" src ="https://img.shields.io/static/v1?style=for-the-badge&message=MongoDB&color=47A248&logo=MongoDB&logoColor=FFFFFF"/>
