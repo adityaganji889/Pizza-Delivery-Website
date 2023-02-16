@@ -1,0 +1,121 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.fb-20{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.wh-200{
+  width: 200px !important;
+  height: 200px !important;
+}
+
+.wh-300{
+  width: 300px !important;
+  height: 300px !important;
+}
+
+.flex-container{
+  display: flex !important;
+}
+
+.btn{
+  background-color: red !important;
+  color: white !important;
+}
+
+select{
+  box-shadow: none !important;
+  border-color: black !important;
+}
+ .m-70{
+  margin: 70px !important;
+ }
+
+ .cursor-pointer{
+  cursor: pointer;
+ }
+
+ a {
+  color: grey !important;
+  text-decoration: none !important;
+  font-weight: bold !important;
+ }
+
+ .active{
+  color: black !important;
+  text-decoration: none !important;
+  font-weight: bold !important;
+ }
+
+ .f-30{
+  font-size: 40px !important;
+ }
+
+ .wh-80{
+  height: 80px !important;
+  width: 80px !important;
+ }
+
+ .f-45{
+  font-size: 45px !important;
+ }
+
+ input, textarea{
+  margin-top: 10px !important;
+  box-shadow: none !important;
+}
+
+.wh-100{
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.f-25{
+  font-size: 25px !important;
+}
+
+.adminFunctions{
+  padding: 10px;
+  background-color: rgb(1,1,77);
+}
+
+.adminFunctions li{
+  list-style-type: none !important;
+  display: inline !important;
+}
+
+.adminFunctions li a{
+  color: white !important;
+  padding: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+  border: 1px solid red;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2rem;
+  background: red;
+  width: 1rem;
+}
