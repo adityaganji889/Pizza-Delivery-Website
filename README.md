@@ -25,3 +25,9 @@
 
 #### Payment Gateway:
 <img alt="Stripe" src="https://img.shields.io/badge/Stripe-626CD9?style=for-the-badge&logo=Stripe&logoColor=white"/>
+
+## Demonstration:
+
+https://user-images.githubusercontent.com/88584574/219683375-1341de89-b934-4061-bf22-eccca682b2b6.mp4
+
+
