@@ -1,5 +1,5 @@
 # Pizza-Delivery-Website
-## Pizza Hut featuring:
+## Features:
  * Add to cart Feature
  * Update Quantity in cart
  * Delete Products from cart
@@ -24,4 +24,4 @@
 <img alt="MongoDB" src ="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"/>
 
 #### Payment Gateway:
-[!Stripe]('https://img.shields.io/static/v1?style=for-the-badge&message=Stripe&color=008CDD&logo=Stripe&logoColor=FFFFFF&label=')
+<img alt="Stripe" src="https://img.shields.io/static/v1?style=for-the-badge&message=Stripe&color=008CDD&logo=Stripe&logoColor=FFFFFF&label="/>
