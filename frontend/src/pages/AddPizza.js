@@ -60,7 +60,7 @@ function AddPizza() {
         <select name="" id="" className='form-select mt-2 w-100'
             value={category?category:"veg"}
             onChange={(e)=>{ setcategory(e.target.value)}} required>
-              <option value="veg">Veg</option>
+              <option value="veg" selected>Veg</option>
               <option value="nonveg">Non-Veg</option>
             </select>
         <textarea type="text" placeholder='description' value={description} onChange={(e)=>setdescription(e.target.value)} className='form-control' rows="5"   required>
