@@ -24,6 +24,12 @@ const userSchema = mongoose.Schema({
 }
 )
 
+// Delete orders of the user when a user is deleted
+userSchema.post('remove',async function(res, next){
+   await Order.deleteMany({userid: this._id});
+   next();
+})
+
 const userModel = mongoose.model("users",userSchema)
 
 module.exports = userModel
