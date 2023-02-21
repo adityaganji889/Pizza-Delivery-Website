@@ -1,4 +1,5 @@
 const User = require("../models/userModel")
+const Order = require("../models/orderModel")
 const bcrypt = require("bcryptjs");
 const jwt = require('jsonwebtoken');
 
@@ -166,6 +167,7 @@ const deleteUser = async(req,res) => {
      if(user.isAdmin){
       const user = await User.findById(req.params.id)
       if(user._id!==req.body.userid){
+        await Order.remove({ userid: user._id })
         await user.delete()
         res.send({
         message: "User deleted Successfully",

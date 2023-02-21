@@ -1,5 +1,6 @@
 import axios from "axios";
 import { USER_REGISTER_FAILED, USER_REGISTER_REQUEST, USER_REGISTER_SUCCESS, USER_LOGIN_REQUEST, USER_LOGIN_SUCCESS, USER_LOGIN_FAILED, GET_USER_INFO, REMOVE_USER_INFO, REMOVE_LOGIN_INFO, REMOVE_REGISTER_INFO, GET_ALLUSERS_REQUEST, GET_ALLUSERS_SUCCESS, REMOVE_ALLUSERS_INFO } from "../constants/userConstants";
+import { getAllOrders } from "./orderActions";
 
 export const registerUser = (user) => async(dispatch) => {
     try{
@@ -145,6 +146,7 @@ export const deleteUserById = (id) => async(dispatch) => {
       if(data.success){
           alert(data.message)
           dispatch(getAllUsers())
+          dispatch(getAllOrders())
       }
       else{
           alert(data.message)
