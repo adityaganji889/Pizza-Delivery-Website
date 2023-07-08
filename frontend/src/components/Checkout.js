@@ -7,6 +7,7 @@ import Error from './Error'
 import Loading from './Loading'
 import { useNavigate } from 'react-router-dom'
 import { removeCartItems } from '../redux/actions/cartActions'
+import env from 'react-dotenv'
 
 function Checkout(props) {
   const {subTotal} = props
@@ -32,7 +33,7 @@ function Checkout(props) {
       {loading&&<Loading/>}
       {error&&<Error error={error}/>}
       {success&&<Success success={success} message="Your order placed successfully"/>}
-      {subTotal!==0&&<StripeCheckout stripeKey={window.env.PRIMARY_STRIPE_KEY}
+      {subTotal!==0&&<StripeCheckout stripeKey={env.PRIMARY_STRIPE_KEY}
       amount={subTotal*100}
       shippingAddress
       currency="INR"
