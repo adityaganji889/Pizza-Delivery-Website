@@ -32,7 +32,7 @@ function Checkout(props) {
       {loading&&<Loading/>}
       {error&&<Error error={error}/>}
       {success&&<Success success={success} message="Your order placed successfully"/>}
-      {subTotal!==0&&<StripeCheckout stripeKey={process.env.PRIMARY_STRIPE_KEY}
+      {subTotal!==0&&<StripeCheckout stripeKey={window.env.PRIMARY_STRIPE_KEY}
       amount={subTotal*100}
       shippingAddress
       currency="INR"
