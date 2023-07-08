@@ -1,7 +1,7 @@
 const Order = require("../models/orderModel")
 const User = require("../models/userModel")
 const { v4: uuidv4 } = require("uuid")
-const stripe = require("stripe")("sk_test_51MarKISJbAJP59qDH2zYePR5es20RWy8AjFetv6hhamMhKhYQMiUm6bzPVHHvb3llz2DeKtUF02ZSObGpScqsN1Y001cwGbG7H")
+const stripe = require("stripe")(process.env.SECONDARY_STRIPE_KEY)
 
 const placeOrder = async(req,res) => {
     try{
