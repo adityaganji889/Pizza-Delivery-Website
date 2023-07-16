@@ -34,8 +34,8 @@ function OrdersPage() {
             {orders&&orders.map((order,index)=>{
                   return (
                     <Col md={8} key={index} className="btn m-2 ms-5" data-aos="fade-down">
-                        <div className='flex-container'>
-                          <div className='text-left w-100 m-1'>
+                        <Row>
+                          <Col className='text-left m-1' sm={12} md={3}>
                              <h2 className='f-25'>
                               Items
                              </h2>
@@ -46,8 +46,8 @@ function OrdersPage() {
                                 </div>
                                )
                              })}
-                          </div>
-                          <div className='text-left w-100 m-1'>
+                          </Col>
+                          <Col className='text-left m-1' sm={12} md={4}>
                             <h2 className='f-25'>Address</h2>
                             <p>
                             Street: {order.shippingAddress.street}
@@ -61,8 +61,8 @@ function OrdersPage() {
                             <p>
                             Pincode: {order.shippingAddress.pincode}
                             </p>
-                          </div>
-                          <div className='text-left w-100 m-1'>
+                          </Col>
+                          <Col className='text-left m-1' sm={12} md={4}>
                            <h2 className='f-25'>
                             Order Info
                            </h2>
@@ -84,8 +84,8 @@ function OrdersPage() {
                            <p>
                             Delivery Status: {order.isDelivered? "Delivered" : "Yet To Deliver"}
                            </p>
-                          </div>
-                        </div>
+                          </Col>
+                        </Row>
                     </Col>
                   )
             })}

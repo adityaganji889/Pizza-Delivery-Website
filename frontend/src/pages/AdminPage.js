@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { useDispatch } from 'react-redux'
-import { useNavigate } from 'react-router-dom'
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Outlet, useNavigate, useLocation } from 'react-router-dom'
 
 function AdminPage() {
   const navigate = useNavigate()
   const dispatch = useDispatch()
+  const location = useLocation();
   useEffect(()=>{
      if(!localStorage.getItem("token")){
         navigate("/login")
@@ -21,10 +21,10 @@ function AdminPage() {
   return (
     <Container>
       <Row className='justify-content-center p-3'>
-       <Col md={10}>
+       <Col md={10} sm={12}>
        <h1 className='f-40 text-center'>Admin Panel</h1>
         <ul className='adminFunctions text-center'>
-            <li><Link to="/admin/usersList">Users List</Link></li>
+            <li className={`${location.pathname==="/admin/usersList"&&'list-active-item'}`}><Link to="/admin/usersList">Users List</Link></li>
             <li><Link to="/admin/pizzasList">Pizzas List</Link></li>
             <li><Link to="/admin/addPizza">Add Pizza</Link></li>
             <li><Link to="/admin/ordersList">Orders List</Link></li>

@@ -104,6 +104,22 @@ select{
   padding: 20px;
 }
 
+.adminFunctions li a:hover{
+  color: gray !important;
+  padding: 20px;
+}
+
+.list-item-active{
+  color: lightskyblue !important;
+}
+
+@media screen and (width<768px) {
+  .adminFunctions li{
+    list-style-type: none !important;
+    display: block !important;
+  }
+}
+ 
 ::-webkit-scrollbar {
   width: 1rem;
   border: 1px solid red;
